@@ -41,7 +41,7 @@ section {
 
 @media (min-width: 768px) {
   section {
-    padding: 150px 0; } }
+    padding: 50px 0; } }
 
 ::-moz-selection {
   background: #28a745;
@@ -123,8 +123,8 @@ header.masthead {
   -o-background-size: cover;
   background-size: cover; }
   header.masthead .intro-text {
-    padding-top: 150px;
-    padding-bottom: 100px; }
+   /* padding-top: 150px;
+    padding-bottom: 100px;*/ }
     header.masthead .intro-text .intro-lead-in {
       font-size: 22px;
       font-style: italic;
@@ -132,17 +132,18 @@ header.masthead {
       margin-bottom: 25px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 700;
-      line-height: 50px;
+      line-height: 40px;
+      margin-bottom: 15px;
       margin-bottom: 25px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
       text-transform: uppercase; }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
+       padding-top: 130px;
+       padding-bottom: 110px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       font-style: italic;
@@ -434,10 +435,16 @@ header.masthead {
     margin-top: 0; }
 
 section#contact {
-  background-color: #222222;
-  background-image: url("../img/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center; }
+    background-color: #222222;
+    text-align: center;
+    background-image: url("../img/map-image.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
   section#contact .section-heading {
     color: white; }
   section#contact .form-group {
@@ -478,7 +485,7 @@ section#contact {
     color: #e74c3c; }
 
 footer {
-  padding: 25px 0;
+  padding: 10px 0;
   text-align: center; }
   footer span.copyright {
     font-size: 90%;
@@ -497,7 +504,7 @@ footer {
 ul.social-buttons {
   margin-bottom: 0; }
   ul.social-buttons li a {
-    font-size: 20px;
+       font-size: 20px;
     line-height: 40px;
     display: block;
     width: 40px;
@@ -505,10 +512,10 @@ ul.social-buttons {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
-    color: white;
-    border-radius: 100%;
     outline: none;
-    background-color: #222222; }
+    background-color: #222222;
+    padding-left: 10px;
+     }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #28a745; }
 
@@ -571,4 +578,8 @@ ul.social-buttons {
     .logo{
       height: 40px;
       width: 40px;
+    }
+    .row .card .logo{
+    width: 60px !important;
+    height: 60px !important;
     }
